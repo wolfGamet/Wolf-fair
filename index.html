@@ -1746,5 +1746,11 @@ button:active { transform: translateY(1px) scale(0.99); }
       loadStage(0, true);
       requestAnimationFrame(loop);
     })();
-  </script></body>
+  </script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+</script>
+</body>
   </html>
